@@ -11,25 +11,24 @@ html{
 
 body{
     margin: 0;
+    background-color: #fefcfb;
 }
 
 header {
     overflow: hidden;
     background-image:
-    linear-gradient(rgba(8,103,136,0.5),rgba(8,103,136,0.5)),
+    linear-gradient(rgba(66,191,221,0.5),rgba(66,191,221,0.5)),
     url(/assets/img/header.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100vh;
 }
-.logo {
-    width: 300px;
-}
+
 .nav{
     position: fixed;
     width: 100%;
-    height: 100px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,13 +40,17 @@ header {
     -o-transition: all 0.5s ease;
 }
 
-.nav.active{
-
-    background-color: #086788;
-    height: 70px;
+.logo {
+    width: 400px;
 }
 
-.nav.active .title,
+.nav.active{
+    background-color: #084B83;
+    height: 100px;
+    box-shadow: 0 5px 10px 3px rgba(0,0,0,0.5);
+}
+
+.nav.active,
 .menu{
     display: flex;
 }
@@ -58,7 +61,7 @@ header {
 
 .menu li a {
     color: #fff;
-    font-size: 120%;
+    font-size: 28px;
     font-weight: 600;
     transition: all .5s;
     -webkit-transition: all .5s;
@@ -67,27 +70,10 @@ header {
     -o-transition: all .5s;
 }
 
-/* .text {
-    margin-top: 400px;
-    color: #fff;
-    margin-left: 30px;
-    font-family: 'Courier Prime', monospace;
-    font-size: 24px;
-    width: 650px;
-}
-
-.text p {
-    text-align: justify;
-}
-
-.text span {
-    margin-left: 430px;
-} */
-
 .menu li a:hover {
     padding: 5px 10px;
     background: #fff;
-    color: #000;
+    color: #084B83;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -95,52 +81,58 @@ header {
     -o-border-radius: 15px;
 }
 
-/* .separator {
-    padding-bottom: 80px;
-    background-color: #000;
-    margin-bottom: 40px;
+.info-box{
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
-.biografia-title {
-    margin: 0 0 40px 50px;
+
+.info-box p{
+    text-transform: uppercase;
+    margin-bottom: 200px;
+    font-weight: 700;
     font-size: 50px;
+    color:#084b83;
 }
 
-.imagen {
-    background-image: url(/assets/img/mario_benedetti_libreria.webp);
-    background-size: cover;
-    height: 500px;
-    width: 690px;
-    margin: 0 100px 0 50px;
-    float: right;
+.buttons-box{
+    margin-left: auto;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background-color: #084b83;
+    padding: 20px 0;
+    width: 350px;
+    font-size: 25px;
+    font-weight: 700;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+    text-transform: uppercase;
+    transition: .5s ;
+    -webkit-transition: .5s ;
+    -moz-transition: .5s ;
+    -ms-transition: .5s ;
+    -o-transition: .5s ;
 }
 
-.biografia p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    text-align: justify;
-    margin: 0 100px 15px 100px;
+.btn:hover{
+    background-color: #bbe6e4;
+    color: #084B83;
 }
-
-.image-2 {
-    margin: 25px 100px 25px 100px;
-    width: 1149px;
-
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-
-}
-
-*/
 
 .caja {
+    font-size: 100px;
     height: 5000px;
 }
